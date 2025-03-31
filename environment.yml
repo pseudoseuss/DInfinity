@@ -1,0 +1,17 @@
+name: modular-resonance
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - numpy>=1.23
+  - scipy>=1.9
+  - matplotlib>=3.6
+  - mpmath>=1.2
+  - sympy>=1.11
+  - jupyterlab>=3.4
+  - pip
+  - pip:
+      - seaborn>=0.12
+      - pandas>=1.5
