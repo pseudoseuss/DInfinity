@@ -1,35 +1,38 @@
-# DInfinity
-Python code and numerical experiments supporting a novel spectral framework for understanding the Riemann Hypothesis using modular forms and Dirac operators.
+# Modular Resonance and the Riemann Hypothesis
 
-This repository contains the numerical code and simulation tools developed for the research presented in the book:
+This repository contains the source code and numerical tools used to support the operator-theoretic framework for the Riemann Hypothesis, based on modular resonance and spectral zeta methods.
 
-**“Modular Resonance and the Riemann Hypothesis: A Spectral Framework for Prime Distribution and Quantum Geometry”**
+The work is described in the book:  
+**"Modular Resonance, Dirac Operators, and the Riemann Hypothesis"**
 
-We explore a new operator-theoretic model based on modular Dirac operators and resonance structures, providing both analytical constructions and numerical evidence supporting the Riemann Hypothesis through trace zeta analogs.
-
----
-
-## 📁 Project Structure
-
-- `modular_dirac.py` — Builds the modular Dirac matrix \( D_N \) from modular kernel definitions.
-- `trace_zeta.py` — Computes the trace \( \mathrm{Tr}(e^{-t^2 D_K^2}) \), orbit-subtracted kernel, and defines \( \zeta_{\text{mod}}(s) \).
-- `zero_comparison.py` — Compares eigenvalues to known zeta zeros and computes correlation statistics.
-- `spectral_statistics.py` — Analyzes eigenvalue spacings vs GUE statistics.
-- `visualize_criticalline.py` — Plots \( \zeta_{\text{mod}}(0.5 + it) \) and zero crossings.
-- `demo_analysis.ipynb` — Jupyter notebook tying together all analyses and plots.
+> ⚠️ This repository is a work-in-progress companion to the manuscript.  
+> All results are reproducible with the included scripts and notebook.
 
 ---
 
-## 🔧 Requirements
+## 📦 Contents
 
-- Python 3.10+
-- NumPy
-- SciPy
-- Matplotlib
-- mpmath
-- SymPy
-- (Optional) JupyterLab / Jupyter Notebook for interactive use
+- `modular_dirac.py` — Generates the modular Dirac matrix \( D_N \)
+- `trace_zeta.py` — Computes \( \zeta_{\mathrm{mod}}(s) \) via trace integrals
+- `zero_comparison.py` — Compares eigenvalues to Riemann zeta zeros
+- `spectral_statistics.py` — Plots spacing distribution and GUE comparison
+- `visualize_criticalline.py` — Evaluates \( \zeta_{\mathrm{mod}}(0.5 + it) \)
+- `demo_analysis.ipynb` — Full interactive walkthrough of all steps
 
-Install dependencies:
+---
+
+## 🛠 Requirements
+
+Tested on **Python 3.10+** with the following libraries:
+
 ```bash
 pip install numpy scipy matplotlib mpmath sympy
+
+Run scripts individually:
+python modular_dirac.py
+python trace_zeta.py
+python zero_comparison.py
+python spectral_statistics.py
+python visualize_criticalline.py
+
+For a full explanation of the theory, simulation design, and analytic framework, refer to the book and Appendix.
